@@ -13,6 +13,11 @@ header {
   margin: 20px;
 }
 
+h1 {
+  font-family: "Arvo", serif;
+  font-size: 48px;
+}
+
 .primstav {
   background-color: rgb(204, 153, 0);
   border: 1px solid #000000;
@@ -21,6 +26,7 @@ header {
 }
 
 .day {
+  font-family: "PT Sans", Verdana, Helvetica, Arial, sans-serif; 
   height: 25px; 
   position: relative;
 }
