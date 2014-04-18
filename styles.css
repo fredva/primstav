@@ -1,0 +1,51 @@
+body {
+  background: #f5f5dc;
+  margin: 0 auto;
+  width: 800px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+header {
+  text-align: center;
+  margin: 20px;
+}
+
+.primstav {
+  background-color: rgb(204, 153, 0);
+  border: 1px solid #000000;
+  margin: 0 auto;
+  width: 200px;
+}
+
+.day {
+  height: 25px; 
+  position: relative;
+}
+
+.day::before {
+  background-color: #000000;
+  content: ""; 
+  left: 0;
+  height: 1px;
+  position: absolute;
+  top: 50%;
+  width: 10px;
+}
+
+.day.hover::before {
+  height: 2px;
+}
+
+.day h2 {
+  display: none;
+}
+
+.day.hover:hover h2 {
+  display: block;
+  left: 40px;
+  position: absolute;
+  width: 400px;
+}
