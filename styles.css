@@ -1,6 +1,6 @@
 body {
   background: #f5f5dc;
-  margin: 0 auto;
+  margin: 0 auto 40px;
   width: 800px;
 }
 
@@ -20,14 +20,45 @@ h1 {
 
 .primstav {
   background-color: rgb(204, 153, 0);
-  border: 1px solid #000000;
   margin: 0 auto;
   width: 200px;
 }
 
+.primstav {
+  	position:relative;       
+    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+       -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+.primstav:before, .primstav:after {
+	content:"";
+    position:absolute; 
+    z-index:-1;
+    -webkit-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    -moz-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    box-shadow:0 0 20px rgba(0,0,0,0.8);
+    top:10px;
+    bottom:10px;
+    left:0;
+    right:0;
+    -moz-border-radius:100px / 10px;
+    border-radius:100px / 10px;
+} 
+.primstav:after {
+	right:10px; 
+    left:auto;
+    -webkit-transform:skew(8deg) rotate(3deg); 
+       -moz-transform:skew(8deg) rotate(3deg);     
+        -ms-transform:skew(8deg) rotate(3deg);     
+         -o-transform:skew(8deg) rotate(3deg); 
+            transform:skew(8deg) rotate(3deg);
+}  
+
 .day {
+  border-left: 1px solid #000000;
   font-family: "PT Sans", Verdana, Helvetica, Arial, sans-serif; 
   height: 25px; 
+  margin-left: 10px;
   position: relative;
 }
 
@@ -43,6 +74,11 @@ h1 {
 
 .day.hover::before {
   height: 2px;
+}
+
+.day:nth-child(7n+1)::before {
+  left: -11px;
+  width: 21px;
 }
 
 .day h2 {
