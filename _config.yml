@@ -1,3 +1,4 @@
 name: Primstav 
+baseurl: /primstav
 markdown: redcarpet
 pygments: true
