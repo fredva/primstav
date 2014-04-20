@@ -6,17 +6,22 @@ title: Primstav
   <h1>Primstav</h1>
 </header>
   
-<div class="primstav summer">
+<ul class="primstav summer">
   {% for day in site.data.summer %}
     {% if day.name %}
-      <div class="day hover">
-        <h2>{{ day.date }} &mdash; {{ day.name }}</h2>
-      </div>
+      <li class="day hover">
+        <article>
+          <h2>{{ day.name }}</h2>
+          <h3>{{ day.date }}</h2>
+        </article>
+      </li>
     {% else %}
-      <div class="day">
-        <h2>{{ day.date }}</h2>
-      </div>
+      <li class="day">
+        <article>
+          <h2>{{ day.date }}</h2>
+        </article>
+      </li>
     {% endif %}
   {% endfor %}
-</div>
+</ul>
 
