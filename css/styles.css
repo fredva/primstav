@@ -1,11 +1,7 @@
 body {
   background: #f5f5dc;
   margin: 0 auto 40px;
-  width: 800px;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  margin: 0;
+  max-width: 800px;
 }
 
 header {
@@ -15,7 +11,7 @@ header {
 
 h1 {
   font-family: "Arvo", serif;
-  font-size: 48px;
+  font-size: 3em;
 }
 
 .primstav {
@@ -89,5 +85,4 @@ h1 {
   display: block;
   left: 40px;
   position: absolute;
-  width: 400px;
 }
