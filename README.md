@@ -9,4 +9,4 @@ Synes du [primstaven](snl.no/primstav) din er litt for stor til at den er prakti
 
 `bundle install`
 
-`jekyll serve --baseurl ''`
+`jekyll serve --watch --baseurl ''`
