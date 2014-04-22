@@ -2,7 +2,7 @@ body {
   background: #f5f5dc;
   font-family: "PT Sans", Verdana, Helvetica, Arial, sans-serif; 
   margin: 0 auto 20px;
-  max-width: 800px;
+  max-width: 600px;
   text-align: center;
 }
 
@@ -10,29 +10,44 @@ a {
   text-decoration: none;
 }
 
-header {
-  text-align: center;
-  margin: 20px;
-}
-
 h1 {
   font-family: "chunkfiveroman", serif;
-  font-size: 3em;
+  font-size: 2.25em;
   font-weight: normal;
 }
 
 h2 { 
-  font-size: 2.25em;
+  font-size: 2em;
   margin-bottom: 0.2em;
 } 
 
 h3 { font-size: 1.5em; } 
 
+.header {
+  background-color: rgba(255, 255, 255, 0.7);
+  left: 0;
+  padding: 1em;
+  position: fixed;
+  right: 0;
+  text-align: center;
+  top: 0;
+  z-index: 1;
+}
+
+.header-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.header-content h1 {
+  float: left;
+}
+
 .primstav {
   background-color: rgb(204, 153, 0);
   border-radius: 7em;
   box-shadow: 10px 5px 27px -6px rgba(0,0,0,0.8);
-  margin: 0 auto 25px;
+  margin: 4.25em auto 1.5em;
   padding: 7em 0;
   position:relative;       
   width: 200px;
