@@ -1,6 +1,6 @@
 #Primstav
 
-Synes du [primstaven](snl.no/primstav) din er litt for stor til at den er praktisk å ha med seg rundt? Bruk denne staven da vel. 
+Synes du [primstaven](http://snl.no/primstav) din er litt for stor til at den er praktisk å ha med seg rundt? Bruk denne staven da vel. 
 
 
 ##Dev
