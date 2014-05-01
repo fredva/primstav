@@ -1,0 +1,15 @@
+{% if day.name %}
+  <li class="day hover">
+    <article>
+      <h2>{{ day.name }}</h2>
+      <h3>{{ day.date }}</h2>
+    </article>
+  </li>
+{% else %}
+  <li class="day">
+    <article>
+      <h2>{{ day.date }}</h2>
+    </article>
+  </li>
+{% endif %}
+
