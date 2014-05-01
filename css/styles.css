@@ -46,6 +46,7 @@ h3 { font-size: 1.5em; }
 .primstav {
   border-radius: 7em;
   box-shadow: 10px 5px 27px -6px rgba(0,0,0,0.8);
+  display: none;
   margin: 4.25em auto 1.5em;
   padding: 7em 0;
   position:relative;       
@@ -91,12 +92,20 @@ h3 { font-size: 1.5em; }
   display: block;
 }
 
-.winter {
-  background-color: #74BBFB;
-  display: none;
-}
-
 .summer {
   background-color: rgb(204, 153, 0);
 }
+
+.winter {
+  background-color: #74BBFB;
+}
+
+body.show-summer .primstav.summer {
+  display: block;
+}
+
+body.show-winter .primstav.winter {
+  display: block;
+}
+
 
