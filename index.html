@@ -27,6 +27,25 @@ title: Primstav
   {% endfor %}
 </ul>
 
+<ul class="primstav winter">
+  {% for day in site.data.winter %}
+    {% if day.name %}
+      <li class="day hover">
+        <article>
+          <h2>{{ day.name }}</h2>
+          <h3>{{ day.date }}</h2>
+        </article>
+      </li>
+    {% else %}
+      <li class="day">
+        <article>
+          <h2>{{ day.date }}</h2>
+        </article>
+      </li>
+    {% endif %}
+  {% endfor %}
+</ul>
+
 <footer>
   <span class="authors">By <a href="https://github.com/fredva">fredrik</a> and <a href="https://github.com/tobiasvl">tobias</a>.</span>
 </footer>
