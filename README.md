@@ -7,6 +7,6 @@ Synes du [primstaven](http://snl.no/primstav) din er litt for stor til at den er
 
 `gem install bundler`
 
-`bundle install`
+`bundle install --path vendor/bundle`
 
-`jekyll serve --watch --baseurl ''`
+`bundle exec jekyll serve --watch --baseurl ''`
